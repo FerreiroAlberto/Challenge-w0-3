@@ -11,7 +11,7 @@ strictEquals2();
 */
 
 export function strictEquals(a, b) {
-  if (Object.is(a, NaN) && Object.is(b, NaN)) {
+  if (Object.is(a, NaN) && Object.is(NaN, b)) {
     return false;
   }
   if (
